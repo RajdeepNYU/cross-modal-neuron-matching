@@ -1,0 +1,27 @@
+# Competition data (not redistributed)
+Project_2_Dataset/
+data/
+
+# Working files written by the pipeline
+cache/
+checkpoints/
+submissions/
+diagnostics/
+*.log
+
+# Model weights
+*.pth
+*.pt
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

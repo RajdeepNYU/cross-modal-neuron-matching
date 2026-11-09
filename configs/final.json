@@ -1,0 +1,106 @@
+{
+ "name": "final",
+ "data_root": "C:\\path\\to\\Project_2_Dataset",
+ "seed": 3871,
+ "seg": {
+  "iv": {
+   "tag": "ftmix6",
+   "diam": 14.0,
+   "cellprob": -0.5,
+   "flow": 0.2,
+   "min_size": 30,
+   "min_area": 20,
+   "max_area": 600,
+   "min_conf": 0.0
+  },
+  "ex": {
+   "tag": "ft1",
+   "diam": 20.0,
+   "cellprob": -1.0,
+   "flow": 0.2,
+   "min_size": 30,
+   "min_area": 25,
+   "max_area": 600,
+   "min_conf": 0.0
+  }
+ },
+ "reg": {
+  "rot_range": [
+   -25,
+   25
+  ],
+  "rot_step": 1.0,
+  "scales": [
+   0.92,
+   0.95,
+   0.98,
+   1.01,
+   1.04
+  ],
+  "shapes": [
+   [
+    0.955,
+    -0.055
+   ],
+   [
+    1.0,
+    0.0
+   ]
+  ],
+  "t_window": 0.3,
+  "coarse_sigma": 4.0,
+  "coarse_ds": 2,
+  "n_cand": 24,
+  "sane": {
+   "sx": [
+    0.88,
+    1.1
+   ],
+   "sy": [
+    0.84,
+    1.12
+   ],
+   "shear": [
+    -0.2,
+    0.1
+   ]
+  },
+  "kc_sigmas": [
+   8.0,
+   5.0,
+   3.5,
+   2.5
+  ],
+  "score_sigma": 3.0,
+  "tight_r": 4.0,
+  "min_tight": 6,
+  "warp_sigma": 50.0,
+  "warp_lam": 1.0,
+  "cons_alpha": 2.0,
+  "prior_pose": [
+   6.0,
+   0.99,
+   0.91,
+   -0.055
+  ],
+  "prior_rot_half": 6.0,
+  "prior_n_cand": 40,
+  "z_topk": 60
+ },
+ "match": {
+  "radius": 8.0,
+  "knn": 3,
+  "gbm": {
+   "max_iter": 250,
+   "learning_rate": 0.05,
+   "max_depth": 4,
+   "min_samples_leaf": 20,
+   "l2_regularization": 1.0
+  }
+ },
+ "output": {
+  "pair_thr_scale": 0.6,
+  "iv_area_scale": 1.0,
+  "ex_area_scale": 1.05
+ }
+}

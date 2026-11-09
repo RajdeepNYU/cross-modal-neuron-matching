@@ -1,0 +1,36 @@
+{
+ "name": "family_ft1",
+ "data_root": "C:\\path\\to\\Project_2_Dataset",
+ "seed": 3871,
+ "ckpt_tag": "cp",
+ "cp_tag": "ft1",
+ "cp_base": "cpsam",
+ "seg": {
+  "iv": {
+   "diam": 14.0
+  },
+  "ex": {
+   "diam": 20.0
+  }
+ },
+ "cp_train": {
+  "iv": {
+   "epochs": 40,
+   "per_epoch": 100,
+   "batch": 1,
+   "lr": 2e-05,
+   "wd": 0.1,
+   "crop": 0
+  },
+  "ex": {
+   "epochs": 40,
+   "per_epoch": 100,
+   "batch": 1,
+   "lr": 2e-05,
+   "wd": 0.1,
+   "crop": 288,
+   "ncrops": 700,
+   "cell_bias": 0.85
+  }
+ }
+}

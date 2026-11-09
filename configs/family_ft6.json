@@ -1,0 +1,23 @@
+{
+ "name": "family_ft6",
+ "data_root": "C:\\path\\to\\Project_2_Dataset",
+ "seed": 3871,
+ "ckpt_tag": "cp",
+ "cp_tag": "ft6",
+ "cp_base": "cpsam_v2",
+ "seg": {
+  "iv": {
+   "diam": 11.0
+  }
+ },
+ "cp_train": {
+  "iv": {
+   "epochs": 40,
+   "per_epoch": 100,
+   "batch": 1,
+   "lr": 2e-05,
+   "wd": 0.1,
+   "crop": 0
+  }
+ }
+}
